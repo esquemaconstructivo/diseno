@@ -1,2 +1,32 @@
-# diseno
-Diseño de Esquema Constructivo. Herramienta de apoyo, no es un canal oficial de EPM. Creado por Jaidiver Giraldo.
+# Diseño de Esquema Constructivo
+
+Herramienta de apoyo para elaborar esquemas constructivos eléctricos residenciales (RETIE y NTC 2050).
+**No es un canal oficial de EPM.** Creado por Jaidiver Giraldo.
+
+## Dirección oficial
+
+**https://esquemaconstructivo.github.io/diseno/**
+
+Solo esa dirección es la oficial. Si encuentras la herramienta en otro sitio, puede ser una copia modificada.
+
+## Cómo comprobar que tu copia es la original
+
+Huella SHA-256 de `index.html` publicada:
+
+```
+a3341dbaf0da8efbd1ac5755f38fba5d282c8457ad547a8cd32c2b0d55e62b60
+```
+
+- Windows (PowerShell): `Get-FileHash index.html -Algorithm SHA256`
+- Mac o Linux: `shasum -a 256 index.html`
+
+Si la huella no coincide, no uses ese archivo.
+
+## Privacidad
+
+La herramienta no envía, no comparte ni almacena datos en servidores. Funciona en el equipo de quien la usa.
+Ley 1581 de 2012 y Decreto 1074 de 2015.
+
+## Responsabilidad
+
+El esquema lo elabora, revisa y firma la persona calificada que lo suscribe. La herramienta es un apoyo y no reemplaza su criterio ni su firma.
