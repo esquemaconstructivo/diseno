@@ -9,6 +9,10 @@ Herramienta de apoyo para elaborar esquemas constructivos eléctricos residencia
 
 Solo esa dirección es la oficial. Si encuentras la herramienta en otro sitio, puede ser una copia modificada.
 
+## Guía de uso
+
+- Guía animada: https://esquemaconstructivo.github.io/diseno/guia.html
+
 ## Cómo comprobar que tu copia es la original
 
 Huella SHA-256 de `index.html` publicada:
