@@ -11,14 +11,14 @@ Solo esa dirección es la oficial. Si encuentras la herramienta en otro sitio, p
 
 ## Guía de uso
 
-- Guía animada: https://esquemaconstructivo.github.io/diseno/guia.html
+- Guía interactiva por casos (casa tipo, a mi medida, dibujo a mano, foto, IA, declaración RETIE): https://esquemaconstructivo.github.io/diseno/guia.html
 
 ## Cómo comprobar que tu copia es la original
 
 Huella SHA-256 de `index.html` publicada:
 
 ```
-3b07ff458258d14bf36c84b838268250af39853b7967c56df1766b9110fbe208
+724c616fde99cb4bc14f853b0d72e0ba4d762cf7896ed540fcb02d02705f371f
 ```
 
 - Windows (PowerShell): `Get-FileHash index.html -Algorithm SHA256`
