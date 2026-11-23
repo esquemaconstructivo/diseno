@@ -1,7 +1,7 @@
 # Diseño de Esquema Constructivo
 
 Herramienta de apoyo para elaborar esquemas constructivos eléctricos residenciales (RETIE y NTC 2050).
-**No es un canal oficial de EPM.** Creado por Jaidiver Giraldo.
+Creado por Jaidiver Giraldo.
 
 ## Dirección oficial
 
@@ -18,7 +18,7 @@ Solo esa dirección es la oficial. Si encuentras la herramienta en otro sitio, p
 Huella SHA-256 de `index.html` publicada:
 
 ```
-724c616fde99cb4bc14f853b0d72e0ba4d762cf7896ed540fcb02d02705f371f
+e5fcee771528ef291988702a7f2099abeaac0fbb65a8056d4d18a8365c411de2
 ```
 
 - Windows (PowerShell): `Get-FileHash index.html -Algorithm SHA256`

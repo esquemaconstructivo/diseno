@@ -1,7 +1,7 @@
 {
   "name": "Diseño de Esquema Constructivo",
   "short_name": "Diseño Esquema",
-  "description": "Herramienta de apoyo para esquemas constructivos eléctricos residenciales. No es un canal oficial de EPM.",
+  "description": "Herramienta de apoyo para esquemas constructivos eléctricos residenciales.",
   "lang": "es-CO",
   "start_url": "./",
   "scope": "./",
