@@ -18,7 +18,7 @@ Solo esa dirección es la oficial. Si encuentras la herramienta en otro sitio, p
 Huella SHA-256 de `index.html` publicada:
 
 ```
-18a1ee23540f7f42a0e652c3ed2cbdb9cd2771d3aa2f1cf0ebfb7442cfb0b476
+1e4236b26b6a24409ea2c270dc20a68cea6df4321025cdba1d10a80e6589eb26
 ```
 
 - Windows (PowerShell): `Get-FileHash index.html -Algorithm SHA256`
