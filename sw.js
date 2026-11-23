@@ -2,7 +2,7 @@
    No guarda datos de los proyectos: la app no hace peticiones con datos y solo se guardan los archivos de esta lista.
    Primero intenta la red para traer siempre la última versión.
    Fase 1 (nov 2026): lista permitida, nombre de caché con la versión y la huella del build, borrado de cachés viejas. */
-const VERSION = "v47-e5fcee7715"; // build.mjs pone aquí APP_VER y la huella de index.html
+const VERSION = "v47-18a1ee2354"; // build.mjs pone aquí APP_VER y la huella de index.html
 const PREFIJO = "diseno-esquema-";
 const CACHE = PREFIJO + VERSION;
 const ARCHIVOS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png", "./apple-touch-icon.png"];
@@ -20,10 +20,13 @@ self.addEventListener("fetch", (e) => {
   if (r.method !== "GET" || new URL(r.url).origin !== self.location.origin) return;
   const clave = base(r.url), nav = r.mode === "navigate";
   if (!PERMITIDOS.has(clave) && !nav) return; // fuera de la lista: el navegador lo maneja normal, sin caché
+  const guardada = () => caches.open(CACHE).then((c) => c.match(clave).then((m) => m || (nav ? c.match(base("./index.html")) : undefined)));
   e.respondWith(
     fetch(r).then((res) => {
       if (res.ok && res.type === "basic" && PERMITIDOS.has(clave)) { const copia = res.clone(); caches.open(CACHE).then((c) => c.put(clave, copia)); }
+      // auditoría 2026-11: si el servidor falla (5xx) se usa la copia guardada en vez de mostrar el error
+      if (res.status >= 500) return guardada().then((m) => m || res);
       return res;
-    }).catch(() => caches.open(CACHE).then((c) => c.match(clave).then((m) => m || (nav ? c.match(base("./index.html")) : undefined))))
+    }).catch(guardada)
   );
 });
