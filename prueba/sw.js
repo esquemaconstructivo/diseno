@@ -2,7 +2,7 @@
    No guarda datos de los proyectos: la app no hace peticiones con datos y solo se guardan los archivos de esta lista.
    Primero intenta la red para traer siempre la última versión.
    Fase 1 (nov 2026): lista permitida, nombre de caché con la versión y la huella del build, borrado de cachés viejas. */
-const VERSION = "v49-6bcad55d76"; // build.mjs pone aquí APP_VER y la huella de index.html
+const VERSION = "v49-15ec7ced3f"; // build.mjs pone aquí APP_VER y la huella de index.html
 const PREFIJO = "diseno-esquema-prueba-";
 const CACHE = PREFIJO + VERSION;
 const ARCHIVOS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png", "./apple-touch-icon.png"];
